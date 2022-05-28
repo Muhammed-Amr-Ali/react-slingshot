@@ -8,16 +8,16 @@ jobs:
     steps:
       - checkout
       - run: |
-          - npm i
-          - npm run lint
+          npm i
+          npm run lint
   test:
     docker:
     - image: circleci/node:13.8.0
     steps:
       - checkout
       - run: |
-          - npm i
-          - npm run test
+          npm i
+          npm run test
   analyze:
     docker:
     - image: circleci/node:13.8.0
